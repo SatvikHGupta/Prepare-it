@@ -1,0 +1,99 @@
+/* Home: the LED strip, the hero with its stack of sample problems, the path cards and the closing band. Theme tokens only. */
+
+/* LED strip: always dark, big lit letters on a faint pixel grid, drifting left to right. Used at the top and between sections. */
+.ticker { position: relative; display: flex; align-items: center; margin: 0; background: color-mix(in srgb, var(--accent) 12%, var(--surface)); border-block: 1px solid color-mix(in srgb, var(--accent) 40%, var(--surface)); overflow: hidden; }
+.ticker::before { content: ''; position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle at 2px 2px, color-mix(in srgb, var(--accent) 11%, transparent) 0 0.9px, transparent 1.4px); background-size: 4px 4px; }
+.ticker-view { position: relative; z-index: 1; flex: 1; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent); mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent); }
+.ticker-run { display: flex; width: max-content; animation: ticker-right 90s linear infinite; }
+.ticker.rule .ticker-run { animation-duration: 70s; }
+.ticker-track { display: flex; flex: none; margin: 0; padding: 0; list-style: none; }
+.ticker-track li { display: inline-flex; align-items: center; white-space: nowrap; padding: 14px 0; font-family: var(--font-mono); font-size: 1.05rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-link); text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 28%, transparent); }
+.ticker.rule .ticker-track li { padding: 9px 0; font-size: 0.9rem; }
+.ticker-track li::after { content: ''; flex: none; width: 7px; height: 7px; margin: 0 30px; background: var(--accent); transform: rotate(45deg); box-shadow: 0 0 6px color-mix(in srgb, var(--accent) 40%, transparent); }
+.ticker .k { margin-right: 10px; padding: 2px 8px; border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent); border-radius: 4px; font-size: 0.7em; letter-spacing: 0.14em; color: var(--accent-link); text-shadow: none; }
+@keyframes ticker-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+.ticker:hover .ticker-run, .ticker:focus-within .ticker-run, .ticker[data-paused] .ticker-run { animation-play-state: paused; }
+.ticker-pause { position: relative; z-index: 2; flex: none; width: 44px; height: 44px; margin-right: 6px; display: grid; place-content: center; border: 0; background: transparent; color: var(--accent-link); font-size: 0.7rem; cursor: pointer; border-radius: 8px; }
+.ticker-pause:hover { background: color-mix(in srgb, var(--accent) 16%, transparent); }
+.ticker.rule { margin: 56px 0 0; }
+@media (prefers-reduced-motion: reduce) {
+  .ticker-run { animation: none; transform: none; }
+  .ticker-track[aria-hidden] { display: none; }
+  .ticker-view { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+}
+
+/* hero */
+.hero2 { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 56px; align-items: center; padding: 64px 0 28px; }
+.eyebrow { margin: 0 0 14px; font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-link); }
+.hero2 h1 { margin: 0 0 0.32em; font-size: clamp(2.5rem, 1.3rem + 4.4vw, 4.6rem); line-height: 1.02; letter-spacing: -0.03em; max-width: 15ch; }
+.swipe { background: linear-gradient(var(--accent), var(--accent)) no-repeat 0 94% / 0% 6px; animation: swipe 1.1s var(--curve) 0.5s forwards; }
+@keyframes swipe { to { background-size: 100% 6px; } }
+.hero2 .lead { max-width: 48ch; }
+.hero2-quick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 18px 0 0; font-size: 0.9rem; }
+.hero2-quick > span { color: var(--text-muted); margin-right: 4px; }
+.hero2-stack { position: relative; min-height: 460px; }
+.pcard { position: absolute; width: min(100%, 360px); display: grid; gap: 12px; padding: 20px; border: 1px solid var(--border-strong); border-radius: var(--radius); background: var(--surface); color: inherit; text-decoration: none; box-shadow: 0 22px 40px -28px color-mix(in srgb, var(--text) 60%, transparent); transition: transform 320ms var(--curve), box-shadow 320ms var(--curve), border-color 160ms var(--curve); animation: pcard-in 700ms var(--curve) backwards, bob 7s ease-in-out infinite; }
+.pcard.pc0 { top: 0; left: 4%; transform: rotate(-4deg); }
+.pcard.pc1 { top: 150px; left: max(0px, min(20%, calc(100% - 372px))); transform: rotate(2.5deg); animation-delay: -2.4s; }
+.pcard.pc2 { top: 300px; left: 0%; transform: rotate(-1.5deg); animation-delay: -4.6s; }
+@keyframes bob { 50% { translate: 0 -7px; } }
+.pcard-top { display: flex; flex-wrap: wrap; gap: 8px; }
+.pcard b { font-family: var(--font-display); font-size: 1.25rem; font-weight: 650; line-height: 1.2; }
+.pcard-go { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: var(--accent-link); }
+.pcard-go svg { width: 14px; height: 14px; transition: transform 200ms var(--curve); }
+@media (hover: hover) { .pcard:hover { transform: rotate(0deg) scale(1.04); z-index: 3; border-color: var(--accent); box-shadow: 0 28px 50px -26px color-mix(in srgb, var(--text) 70%, transparent); } .pcard:hover .pcard-go svg { transform: translateX(4px); } }
+
+/* numbers */
+.statrow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 36px 0 8px; border-block: 1px solid var(--border-strong); }
+.statrow > div { display: grid; gap: 2px; padding: 24px 0 24px 24px; border-left: 1px solid var(--border); }
+.statrow > div:first-child { padding-left: 0; border-left: 0; }
+.statrow b { font-family: var(--font-display); font-size: clamp(1.9rem, 1.2rem + 2vw, 2.9rem); font-weight: 700; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.statrow span { color: var(--text-muted); font-size: 0.9rem; }
+
+/* path cards */
+.path-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.path-card { position: relative; display: grid; align-content: start; gap: 8px; padding: 26px; overflow: hidden; border: 1px solid var(--border-strong); border-radius: var(--radius); background: var(--surface); color: inherit; text-decoration: none; transition: border-color 160ms var(--curve), transform 200ms var(--curve), box-shadow 200ms var(--curve); }
+.path-card::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 100% 0, color-mix(in srgb, var(--accent) 14%, transparent), transparent 62%); }
+.path-card > * { position: relative; }
+.path-card h3 { margin: 6px 0 0; font-size: 1.5rem; }
+.path-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+.path-icon, .dc-icon { display: grid; place-content: center; width: 46px; height: 46px; border-radius: 12px; background: var(--accent-subtle); color: var(--accent-link); }
+.path-icon svg, .dc-icon svg { width: 22px; height: 22px; }
+.dc-icon { width: 38px; height: 38px; border-radius: 10px; margin-bottom: 4px; }
+.dc-icon svg { width: 19px; height: 19px; }
+.path-go { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-weight: 600; font-size: 0.92rem; color: var(--accent-link); }
+.path-go svg { width: 15px; height: 15px; transition: transform 200ms var(--curve); }
+@media (hover: hover) { .path-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 16px 30px -20px color-mix(in srgb, var(--text) 50%, transparent); } .path-card:hover .path-go svg { transform: translateX(5px); } }
+
+/* closing band */
+.cta-band { margin: 72px 0 28px; padding: 52px 24px; text-align: center; border: 1px solid var(--border-strong); border-radius: calc(var(--radius) * 1.6); background: radial-gradient(circle at 50% 0, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%), var(--surface); }
+.cta-band h2 { margin: 0 0 8px; font-size: clamp(1.8rem, 1.2rem + 2vw, 2.8rem); }
+.cta-band p { margin: 0; color: var(--text-muted); }
+.cta-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 22px !important; }
+
+/* scroll reveal where the browser supports it */
+@supports (animation-timeline: view()) {
+  .home .section, .home .statrow, .home .cta-band { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 30%; }
+}
+
+@media (max-width: 960px) {
+  .hero2 { grid-template-columns: minmax(0, 1fr); gap: 36px; padding-top: 40px; }
+  .hero2-stack { min-height: 0; display: grid; gap: 12px; }
+  .pcard, .pcard.pc0, .pcard.pc1, .pcard.pc2 { position: static; width: auto; transform: none; animation: none; }
+  .path-cards { grid-template-columns: minmax(0, 1fr); }
+  .statrow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .statrow > div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .statrow > div:nth-child(n + 3) { border-top: 1px solid var(--border); }
+}
+
+@media print { .home .section, .home .statrow, .home .cta-band { animation: none; } }
+
+/* the hero cards stay hidden until the random three are chosen, then rise in one after another */
+.hero2-stack .pcard { opacity: 0; }
+.hero2-stack[data-ready] .pcard { opacity: 1; }
+.hero2-stack[data-ready] .pcard.pc1 { animation-delay: 120ms, -2.4s; }
+.hero2-stack[data-ready] .pcard.pc2 { animation-delay: 240ms, -4.6s; }
+@keyframes pcard-in { from { opacity: 0; scale: 0.92; } }
+@media (scripting: none) { .hero2-stack .pcard { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .hero2-stack .pcard { opacity: 1; } }
+.home + .ticker.rule + .home > .section:first-child { margin-top: 48px; }

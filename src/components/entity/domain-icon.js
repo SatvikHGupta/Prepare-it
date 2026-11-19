@@ -1,0 +1,2 @@
+// one icon per domain, picked from the domain id so new domains still get a sensible one
+export const domainIcon = (id = '') => (/cod|algo/.test(id) ? 'code' : /data|sql/.test(id) ? 'database' : /stat|math/.test(id) ? 'sigma' : /ml|machine|learn/.test(id) ? 'cpu' : /system|design/.test(id) ? 'network' : /behav|lead/.test(id) ? 'chat' : /analy|experiment/.test(id) ? 'flask' : /swe|fund/.test(id) ? 'layers' : 'compass');

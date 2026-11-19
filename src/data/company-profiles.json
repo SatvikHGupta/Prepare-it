@@ -1,0 +1,354 @@
+{
+ "amazon": {
+  "asOf": "2026-11",
+  "website": "https://www.aboutamazon.com",
+  "careers": "https://www.amazon.jobs",
+  "linkedin": "https://www.linkedin.com/company/amazon",
+  "roles": [
+   {
+    "title": "Software Development Engineer (SDE)",
+    "levels": "SDE I (L4, entry), SDE II (L5), SDE III or Senior (L6), Principal (L7)",
+    "rounds": [
+     "Online application",
+     "Technical phone screen, 60 minutes: half Leadership Principles, half coding and system design (SDE III)",
+     "Interview loop: five 55-minute interviews (SDE III) mixing coding, system design and Leadership Principles",
+     "Outcome within 5 business days of the loop"
+    ],
+    "note": "An online assessment before the phone screen is commonly reported for SDE I and II. Levels come from candidate guides, not from Amazon."
+   },
+   {
+    "title": "Data Scientist",
+    "levels": null,
+    "rounds": [
+     "Recruiter conversation and phone screen",
+     "Interview loop of four to six interviews, 45 to 60 minutes each",
+     "About half of the loop time is technical assessment; the rest is Leadership Principles"
+    ],
+    "note": null
+   }
+  ],
+  "sources": [
+   {
+    "label": "Amazon Jobs: SDE III interview prep",
+    "url": "https://amazon.jobs/content/en/how-we-hire/sde-iii-interview-prep",
+    "official": true
+   },
+   {
+    "label": "About Amazon: interview guide",
+    "url": "https://www.aboutamazon.com/md/news/workplace/amazon-interview-guide",
+    "official": true
+   },
+   {
+    "label": "Candidate guide (levels, online assessment)",
+    "url": "https://prepfully.com/interview-guides/amazon-software-engineer",
+    "official": false
+   }
+  ]
+ },
+ "google": {
+  "asOf": "2026-11",
+  "website": "https://about.google",
+  "careers": "https://www.google.com/about/careers/applications/",
+  "linkedin": "https://www.linkedin.com/company/google",
+  "roles": [
+   {
+    "title": "Software Engineer",
+    "levels": null,
+    "rounds": [
+     "Recruiter call: background, role fit and leveling",
+     "One or two technical phone screens, 45 to 60 minutes, live coding on data structures and algorithms",
+     "Virtual onsite loop of four to six interviews: two to four coding rounds, system design (more weight at senior levels) and a behavioral, culture-fit round",
+     "Hiring committee reviews the interview packet, then team matching"
+    ],
+    "note": "Candidate reports describe the committee, not the interviewers, making the hire decision."
+   },
+   {
+    "title": "Data Scientist, Product Manager and other roles",
+    "levels": null,
+    "rounds": [
+     "Recruiter phone screen on background and logistics",
+     "One or two technical or hiring-manager screens",
+     "Virtual onsite with role-specific rounds plus a behavioral discussion; product sense or case rounds for product roles"
+    ],
+    "note": null
+   }
+  ],
+  "sources": [
+   {
+    "label": "interviewing.io: Google hiring process",
+    "url": "https://interviewing.io/guides/hiring-process/google",
+    "official": false
+   },
+   {
+    "label": "Levels.fyi: Google software engineer interview process",
+    "url": "https://www.levels.fyi/blog/google-software-engineer-interview-process.html",
+    "official": false
+   },
+   {
+    "label": "Interview Query: Google interview guide",
+    "url": "https://www.interviewquery.com/interview-guides/google?exp_page=2",
+    "official": false
+   }
+  ]
+ },
+ "meta": {
+  "asOf": "2026-11",
+  "website": "https://about.meta.com",
+  "careers": "https://www.metacareers.com",
+  "linkedin": "https://www.linkedin.com/company/meta",
+  "roles": [
+   {
+    "title": "Software Engineer",
+    "levels": "E3 (early career) up to E6 and above",
+    "rounds": [
+     "Recruiter call",
+     "Initial technical screen: a 45-minute conversation with an engineer, mainly coding",
+     "Full loop of several conversations: coding, a design interview (systems or product, about 45 minutes, almost never any coding) and behavioral",
+     "Hiring committee review and team match"
+    ],
+    "note": "Meta publishes prep pages for the screen and the full loop. An online assessment is reported for some E3 to E5 loops, and a longer screen at E6."
+   },
+   {
+    "title": "Data Engineer",
+    "levels": "IC3 to IC5",
+    "rounds": [
+     "Recruiter call",
+     "Initial technical interview with a data engineer",
+     "Full loop covering technical depth and behavioral conversations"
+    ],
+    "note": "Meta publishes prep pages for the initial interview and the full loop for this role."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Meta Careers: preparing for your technical screen",
+    "url": "https://metacareers.com/swe-prep-techscreen",
+    "official": true
+   },
+   {
+    "label": "Meta Careers: preparing for your full loop",
+    "url": "https://www.metacareers.com/swe-prep-onsite/",
+    "official": true
+   },
+   {
+    "label": "Candidate guide (levels, online assessment)",
+    "url": "https://prepfully.com/interview-guides/meta-software-engineer",
+    "official": false
+   }
+  ]
+ },
+ "stripe": {
+  "asOf": "2026-11",
+  "website": "https://stripe.com",
+  "careers": "https://stripe.com/jobs",
+  "linkedin": "https://www.linkedin.com/company/stripe",
+  "roles": [
+   {
+    "title": "Software Engineer",
+    "levels": null,
+    "rounds": [
+     "Recruiter screen on background and motivation",
+     "Technical (team) screen, 45 to 60 minutes: live coding on one practical problem in stages, in CoderPad or your own IDE",
+     "Onsite of four to five rounds, drawn from coding, system design, integration (write working code from API documentation), debugging and behavioral",
+     "Team matching and offer"
+    ],
+    "note": "Candidate reports say Stripe expects working code and practical problems rather than puzzles."
+   },
+   {
+    "title": "Data and Product roles",
+    "levels": null,
+    "rounds": [
+     "Recruiter screen",
+     "Take-home instead of a coding screen: a report from provided datasets for data roles, a case study for product managers",
+     "Virtual onsite"
+    ],
+    "note": null
+   }
+  ],
+  "sources": [
+   {
+    "label": "Exponent: Stripe software engineer guide",
+    "url": "https://www.tryexponent.com/guides/stripe/swe-interview",
+    "official": false
+   },
+   {
+    "label": "IGotAnOffer: Stripe software engineer interview",
+    "url": "https://igotanoffer.com/en/advice/stripe-software-engineer-interview",
+    "official": false
+   },
+   {
+    "label": "interviewing.io: Stripe interview questions",
+    "url": "https://interviewing.io/stripe-interview-questions",
+    "official": false
+   }
+  ]
+ },
+ "microsoft": {
+  "asOf": "2026-11",
+  "website": "https://www.microsoft.com",
+  "careers": "https://careers.microsoft.com",
+  "linkedin": "https://www.linkedin.com/company/microsoft",
+  "roles": [],
+  "sources": []
+ },
+ "apple": {
+  "asOf": "2026-11",
+  "website": "https://www.apple.com",
+  "careers": "https://jobs.apple.com",
+  "linkedin": "https://www.linkedin.com/company/apple",
+  "roles": [],
+  "sources": []
+ },
+ "netflix": {
+  "asOf": "2026-11",
+  "website": "https://about.netflix.com",
+  "careers": "https://jobs.netflix.com",
+  "linkedin": "https://www.linkedin.com/company/netflix",
+  "roles": [],
+  "sources": []
+ },
+ "uber": {
+  "asOf": "2026-11",
+  "website": "https://www.uber.com",
+  "careers": "https://www.uber.com/us/en/careers/",
+  "linkedin": "https://www.linkedin.com/company/uber-com",
+  "roles": [],
+  "sources": []
+ },
+ "airbnb": {
+  "asOf": "2026-11",
+  "website": "https://www.airbnb.com",
+  "careers": "https://careers.airbnb.com",
+  "linkedin": "https://www.linkedin.com/company/airbnb",
+  "roles": [],
+  "sources": []
+ },
+ "databricks": {
+  "asOf": "2026-11",
+  "website": "https://www.databricks.com",
+  "careers": "https://www.databricks.com/company/careers",
+  "linkedin": "https://www.linkedin.com/company/databricks",
+  "roles": [],
+  "sources": []
+ },
+ "snowflake": {
+  "asOf": "2026-11",
+  "website": "https://www.snowflake.com",
+  "careers": "https://careers.snowflake.com",
+  "linkedin": "https://www.linkedin.com/company/snowflake-computing",
+  "roles": [],
+  "sources": []
+ },
+ "shopify": {
+  "asOf": "2026-11",
+  "website": "https://www.shopify.com",
+  "careers": "https://www.shopify.com/careers",
+  "linkedin": "https://www.linkedin.com/company/shopify",
+  "roles": [],
+  "sources": []
+ },
+ "spotify": {
+  "asOf": "2026-11",
+  "website": "https://www.spotify.com",
+  "careers": "https://www.lifeatspotify.com",
+  "linkedin": "https://www.linkedin.com/company/spotify",
+  "roles": [],
+  "sources": []
+ },
+ "linkedin": {
+  "asOf": "2026-11",
+  "website": "https://about.linkedin.com",
+  "careers": "https://careers.linkedin.com",
+  "linkedin": "https://www.linkedin.com/company/linkedin",
+  "roles": [],
+  "sources": []
+ },
+ "nvidia": {
+  "asOf": "2026-11",
+  "website": "https://www.nvidia.com",
+  "careers": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+  "linkedin": "https://www.linkedin.com/company/nvidia",
+  "roles": [],
+  "sources": []
+ },
+ "oracle": {
+  "asOf": "2026-11",
+  "website": "https://www.oracle.com",
+  "careers": "https://careers.oracle.com",
+  "linkedin": "https://www.linkedin.com/company/oracle",
+  "roles": [],
+  "sources": []
+ },
+ "salesforce": {
+  "asOf": "2026-11",
+  "website": "https://www.salesforce.com",
+  "careers": "https://careers.salesforce.com",
+  "linkedin": "https://www.linkedin.com/company/salesforce",
+  "roles": [],
+  "sources": []
+ },
+ "adobe": {
+  "asOf": "2026-11",
+  "website": "https://www.adobe.com",
+  "careers": "https://careers.adobe.com",
+  "linkedin": "https://www.linkedin.com/company/adobe",
+  "roles": [],
+  "sources": []
+ },
+ "atlassian": {
+  "asOf": "2026-11",
+  "website": "https://www.atlassian.com",
+  "careers": "https://www.atlassian.com/company/careers",
+  "linkedin": "https://www.linkedin.com/company/atlassian",
+  "roles": [],
+  "sources": []
+ },
+ "block": {
+  "asOf": "2026-11",
+  "website": "https://block.xyz",
+  "careers": "https://block.xyz/careers",
+  "linkedin": "https://www.linkedin.com/company/block",
+  "roles": [],
+  "sources": []
+ },
+ "coinbase": {
+  "asOf": "2026-11",
+  "website": "https://www.coinbase.com",
+  "careers": "https://www.coinbase.com/careers",
+  "linkedin": "https://www.linkedin.com/company/coinbase",
+  "roles": [],
+  "sources": []
+ },
+ "dropbox": {
+  "asOf": "2026-11",
+  "website": "https://www.dropbox.com",
+  "careers": "https://jobs.dropbox.com",
+  "linkedin": "https://www.linkedin.com/company/dropbox",
+  "roles": [],
+  "sources": []
+ },
+ "intuit": {
+  "asOf": "2026-11",
+  "website": "https://www.intuit.com",
+  "careers": "https://www.intuit.com/careers/",
+  "linkedin": "https://www.linkedin.com/company/intuit",
+  "roles": [],
+  "sources": []
+ },
+ "palantir": {
+  "asOf": "2026-11",
+  "website": "https://www.palantir.com",
+  "careers": "https://www.palantir.com/careers/",
+  "linkedin": "https://www.linkedin.com/company/palantir-technologies",
+  "roles": [],
+  "sources": []
+ },
+ "1password": {
+  "asOf": "2026-11",
+  "website": "https://1password.com",
+  "careers": "https://1password.com/careers",
+  "linkedin": "https://www.linkedin.com/company/1password",
+  "roles": [],
+  "sources": []
+ }
+}
